@@ -1,0 +1,32 @@
+﻿/*
+         * create type day_of_week as enum (
+    'Понедельник', 'Вторник', 'Среда', 'Четв
+        ерг', 'Пятница', 'Суббота', 'Воскресенье'
+        );
+
+        CREATE TABLE laundry (
+        id SERIAL PRIMARY KEY,
+        title VARCHAR(255),
+        number integer,
+        start_time TIME, 
+        end_time TIME,
+        work_day day_of_week[]
+        );
+
+CREATE TABLE customer (
+  id SERIAL PRIMARY KEY,
+  full_name VARCHAR(255),//
+  room integer//
+);
+
+CREATE TABLE booking (
+  id SERIAL PRIMARY KEY,
+  laundry_id integer references laundry(id)
+  customer_id integer references customer(id)
+  data DATA,//
+  time TIME,//
+  number integer//
+);
+         */
+    }
+}
